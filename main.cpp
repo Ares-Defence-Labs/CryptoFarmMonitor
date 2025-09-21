@@ -1,11 +1,17 @@
 #include <QApplication>
 #include <QPushButton>
 
+#include "AppStartup.hpp"
+
 int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
-    QPushButton button("Hello world!", nullptr);
-    button.resize(200, 100);
-    button.show();
-    
-    return QApplication::exec();
+    try {
+        AppStartup::initializeAppStartup();
+        QApplication::exec();
+    }
+    catch (const std::exception &e) {
+        // write a stack trace before crashing the app
+        throw e;
+    }
+
+    return EXIT_SUCCESS;
 }
