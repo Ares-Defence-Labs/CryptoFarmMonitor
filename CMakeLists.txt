@@ -45,7 +45,16 @@ add_executable(CryptoFarmMonitor main.cpp
         presentation/viewComponents/textFields/PrimaryTextField.cpp
         presentation/viewComponents/textFields/PrimaryTextField.h
         presentation/viewComponents/textFields/SecondaryTextField.cpp
-        presentation/viewComponents/textFields/SecondaryTextField.h)
+        presentation/viewComponents/textFields/SecondaryTextField.h
+        presentation/viewComponents/buttons/BaseColorButton.h
+        presentation/screens/BaseScreen.cpp
+        presentation/screens/BaseScreen.h
+        core/enums/Environment.h
+        core/services/retrofit/CoinmarketCapClient.cpp
+        core/services/retrofit/CoinmarketCapClient.h
+        core/services/crypto/Bech32.cpp
+        core/services/crypto/Bitcoin.cpp
+        core/services/crypto/Bitcoin.h)
 
 #include fruit for iOC
 find_path(FRUIT_INCLUDE_DIR NAMES fruit/fruit.h REQUIRED)

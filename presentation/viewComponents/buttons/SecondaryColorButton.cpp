@@ -3,3 +3,15 @@
 //
 
 #include "SecondaryColorButton.h"
+
+#include <QPushButton>
+#include <QWidget>
+
+QPushButton* SecondaryColorButton::createWidget(QWidget* parent) {
+    auto* pushButton = new QPushButton(parent);
+
+    pushButton->setAutoDefault(true);
+    pushButton->setFlat(true);
+
+    return pushButton;
+}

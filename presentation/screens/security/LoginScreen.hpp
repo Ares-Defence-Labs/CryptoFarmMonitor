@@ -3,7 +3,10 @@
 //
 
 #pragma once
+#include "../BaseScreen.h"
 
-class LoginScreen {
+class LoginScreen : BaseScreen {
+    void onAppeared() override {
 
+    }
 };

@@ -2,8 +2,8 @@
 #include <string>
 
 struct LoggingExtensions {
-    void logRequests(std::string message);
-    void logInfo(std::string message);
-    void logError(std::exception& exc);
-    void logTrace(std::string message);
+  static void logRequests(std::string message);
+  static void logInfo(std::string message);
+  static void logError(std::exception& exc);
+  static void logTrace(std::string message);
 };

@@ -2,15 +2,18 @@
 // Created by Dan Gerchcovich on 21/9/2025.
 //
 
-#ifndef SECONDARYCOLORBUTTON_H
-#define SECONDARYCOLORBUTTON_H
+#pragma once
+
+#include <QPushButton>
+#include <QWidget>
 
 
-
-class SecondaryColorButton {
-
+enum class Test {
+    sample,
+    hello
 };
 
+struct SecondaryColorButton {
+    static QPushButton* createWidget(QWidget* parent);
+};
 
-
-#endif //SECONDARYCOLORBUTTON_H
